@@ -1,6 +1,6 @@
 # Code-Instrumentation-Tool
 
-This code instrumentation tool adds an additional indicator in the assignment for an automatic differentiation (AD) engine to parse. It is `dco :: assignment_info(id)`. This is added on the right-hand side of the assignment with the operator “<<”. For example, a code snippet is
+A code instrumentation tool based on Clang compiler adds an additional indicator in the assignment for an automatic differentiation (AD) engine to parse. It is `dco :: assignment_info(id)`. This is added on the right-hand side of the assignment with the operator “<<”. For example, a code snippet is
 
 ```c++
 #include <math.h>
