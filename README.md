@@ -25,9 +25,9 @@ template<class T> void f (const T∗ x , T∗ y) {
 The number in the parentheses is the ID of index of the assignment. It increases according to the sequence of the insertion of the code. When an AD engine runs the as- signment with this instrumented part, it will add the index number as the additional
 information to the node corresponding to this assignment, which can be used to locate the assignment.
 
-A mapping file is necessary for the instrumentation. It contains the information of the assignment like the index number, the path, the line number and the starting column number of the left-hand side of the assignment. They are separated by the semicolon. An example is
+The tool creates a mapping file. It contains the information of the assignment like the index number, the path of the instrumented file, the line number and the starting column number of the left-hand side of the assignment. They are separated by the semicolon. An example is
 
 ```
-1;/the path of the folder/f.hpp;5;5
-2;/the path of the folder/f.hpp;6;5
+1;/the path of the file/;5;5
+2;/the path of the file/;6;5
 ```
